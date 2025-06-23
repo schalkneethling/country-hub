@@ -10,8 +10,9 @@ export default (_request: Request, context: Context) => {
   try {
     if (context.params.code) {
       const country = data.find(
-        (country) => country.countryCode === context.params.code,
+        (country) => country.countryCode === context.params.code.toUpperCase(),
       );
+
       if (country) {
         return new Response(JSON.stringify(country), {
           status: 200,
