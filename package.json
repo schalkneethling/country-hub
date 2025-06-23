@@ -1,0 +1,39 @@
+{
+  "name": "country-hub",
+  "version": "0.0.1",
+  "description": "A simple REST based service for country data",
+  "main": "index.js",
+  "scripts": {
+    "prettier:lint": "prettier .",
+    "prettier:format": "prettier --write .",
+    "lint:eslint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schalkneethling/country-hub.git"
+  },
+  "keywords": [
+    "country",
+    "rest",
+    "api"
+  ],
+  "author": "Schalk Neethling",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/schalkneethling/country-hub/issues"
+  },
+  "homepage": "https://github.com/schalkneethling/country-hub#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.2.0",
+    "prettier": "^3.6.0"
+  },
+  "dependencies": {
+    "@netlify/functions": "^3.1.10",
+    "@types/node": "^22.15.32",
+    "typescript": "^4.9.5"
+  }
+}
